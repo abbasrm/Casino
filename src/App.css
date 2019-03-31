@@ -2,32 +2,64 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.coins {
+  width: 180px;
+  height: 200px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  position: relative;
+  margin: 10px auto;
 }
 
-.App-link {
-  color: #61dafb;
+.bg1{
+  background: url(./assets/images/1.png) center center / contain no-repeat;
+}
+.bg3{
+  background: url(./assets/images/3.png) center center / contain no-repeat;
+  width: 350px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.coins > p {
+  font-weight: bold;
+  color: #444;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 2px 12px;
+  border-radius: 10% 10% 10% 10%;
+  font-size: 28px;
+  margin-top: 55px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #333;
+  background-color: #eec933;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #885400;
+  transition: background-color, color ease-in-out 250ms;
+  margin: 8px 5px;
+}
+
+button:hover:not(button:disabled) {
+  background-color: #e99106;
+  color: #eee;
+}
+
+button:active {
+  background-color: hsl(37, 100%, 38%);
+  box-shadow: 0 5px #6e4400;
+  transform: translateY(4px);
+}
+
+button:disabled{
+  pointer-events: none;
+  cursor: default;
+  background-color: #ccc;
+  color: #aaa;
+  box-shadow: 0 9px #999;
 }
