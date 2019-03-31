@@ -18,6 +18,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "homepage": "http://abbasrm.com/netent/",
   "browserslist": [
     ">0.2%",
     "not dead",
